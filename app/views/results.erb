@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summary</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="index.css" >
+  
+  <style> 
+    body {
+      background-color:white;
+      color: black;
+      font-family:Goudy Old Style;;
+    }
+    .results-page {
+      text-align:center;
+    }
+    button {
+    border-color: blue;
+    height: 3vmax;
+    width: 4vmax;
+    font-size: 1.1vmax;
+    }
+    .content {
+      width:70%;
+      margin:0 auto;
+    }
+    h1 {
+      font-size:3vmax;
+    }
+    p {
+      font-size:1.5vmax;
+    }
+  </style>
+</head>
+<body> 
+
+<div class="home-button">
+          <a href="/"><button> Home </button></a>
+    </div>
+  <div class="results-page">
+    
+    <!-- SPELL CHECK RUBY BELOW -->
+    <% if @page1.summary.nil? %>
+    <br>
+      <%=   "I am sorry, but we did not recognize your query. Please press the home button and try again. Thank you!" %>
+    <% else %>
+    <div class="content">
+        <h1><%= @page1.title %></h1><hr>
+        <p><%= @page1.summary %></p>
+    </div>
+    <% end %>
+    
+  </div>
+
+</body>
+</html>
