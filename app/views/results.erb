@@ -44,10 +44,9 @@
     <% if @page1.summary.nil? %>
     <br>
       <%=   "I am sorry, but we did not recognize your query. Please press the home button and try again. Thank you!" %>
-      <p><%= @page1 %></p>
+      <p><%= @page1.openSearch() %></p>
     <% else %>
     <div class="content">
-        <p><%= @page1 %></p>
         <h1><%= @page1.title %></h1><hr>
         <p><%= @page1.summary %></p>
     </div>
