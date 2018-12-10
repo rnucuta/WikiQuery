@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   
   post '/results' do
     @page1 = Wikipedia.find(params[:query].downcase)
-  
+    @hope = 'https://www.mediawiki.org/w/api.php?action=opensearch&search='+:query
     erb :results
   end
   
