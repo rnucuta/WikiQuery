@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
   
   post '/results' do
     @page1 = Wikipedia.find(params[:query].downcase)
+  
     erb :results
   end
   
