@@ -1,8 +1,8 @@
 class Query
     attr_accessor :query
    
-  def initialize(query)
-      @query = query
+    def initialize(query)
+        @query = query
     end  
 #   def spellcheck
 #       if @page1.summary.nil?
