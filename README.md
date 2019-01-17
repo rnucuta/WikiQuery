@@ -5,4 +5,4 @@ Have fun building and use this template as often as you wish!
 
 ##### Last, but not least... shout out to the real Sinatra!  
 ![1](http://i.imgur.com/sajVKhr.gif)    
-##### #franksinatra #og #sinatra
+##### #franksinatra #og #sinatra# WikiQuery
